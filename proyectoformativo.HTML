@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dulce Tentación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F5E3B4; 
+            margin: 0;
+            overflow: auto;
+            font-family: 'Garamond', sans-serif;
+            padding: 0;
+            text-decoration: none;
+        }
+        .titulo {
+            color: #FFB6C1; 
+            font-size: 40px;
+            text-shadow: 2px 2px 4px rgb(2, 2, 2);
+            text-align: center;
+            margin-top: 20px;
+            position: relative; 
+            white-space: nowrap;
+            animation: moveText 5s linear infinite; 
+        }
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); } 
+        }
+        header {
+            background: rgba(75, 61, 50, 0.9); 
+            padding: 20px; 
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #F5E3B4; 
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav a:hover {
+            color: #FFB6C1; 
+            text-decoration: none;
+            transition: 1s;   
+        }
+        .iconos{
+            margin-right: 5px;
+        }
+        .carrusel {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 15s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .footer {
+            background-color: #4B3D32; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .secciones {
+            background-color: #FFB6C1; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow:#333 2px 2px 6px;
+            font-family: 'Pacifico';
+        }
+
+        .imagenseccion2{
+            float: left;
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px white;
+            
+
+        }
+        .paginamenu{
+            float: right;
+            width: 300px;
+            height:250px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px white;
+
+        }
+        .section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #E0CDAA; 
+            
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 15px;
+        }
+        .section div {
+            background-color: black;
+            color: white;
+            box-shadow: #0c0c0c;
+            width: 45%;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 10px;
+            box-shadow: 2px 2px 2px 2px rgb(183, 78, 148);
+            border-radius:10px;
+        }
+        .parrafo{
+            text-align: justify;
+        }
+        .video{
+            box-shadow: 0px 4px 8px  white;
+            border-radius:10px;
+            display: flex;
+            justify-content: center;
+        }
+        .googlesheet{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0px 4px 8px white;
+            border-radius: 10px;
+        }
+        .imagenbrownie{
+            margin-top: 50px;
+            float: left;
+            margin-left:40px ;
+            border-radius: 10px;
+        }
+        .imagenhuevos{
+            margin-top: 170px;
+            float: right;
+            margin-left:20px ;
+            margin-right:30px ;
+            border-radius: 10px;
+        }
+        .calculadora{
+            float: left;
+            margin-left:40px ;
+            border-radius: 10px;
+        }
+        .menu-btn {
+            background-color: #FFB6C1; 
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            margin: 20px auto; 
+            display: block;
+            width: 100px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header id="menu">
+        <nav>
+            <div>
+                <a href="#historia">Historia</a>
+                <a href="#menucafe">Menú</a>
+                <a href="#blog">Blog</a>
+                <a href="#eventos">Eventos</a>
+            </div>
+            <div class="iconos">
+                <a href="https://www.facebook.com/abigail.velasquez.16940?mibextid=ZbWKwL">
+                    <img src="https://i.imgur.com/6dWv3Iv.png" alt="logo facebook" style="width: 30px; height:30px">
+                <a href="https://www.instagram.com/ariana_abisita?igsh=c3YxNnJncmVidmo=">
+                    <img src="https://i.imgur.com/hpBjpMP.png" alt="logo instagram" style="width: 30px; height:30px">
+                <a href="https://www.whatsapp.com">
+                    <img src="https://i.imgur.com/mcM52Em.png" alt="logo whatsapp" style="width: 30px; height:30px">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carrusel">
+        <div class="slides">
+            <img src="https://i.imgur.com/ouqJu1Z.png" alt="imagen1">
+            <img src="https://i.imgur.com/IoMJQnY.jpeg" alt="imagen2">
+            <img src="https://i.imgur.com/98ROJMT.jpeg" alt="imagen3">
+            <img src="https://i.imgur.com/fPJHxlI.jpeg" alt="imagen4">
+            <img src="https://i.imgur.com/UXZ5HK3.jpeg" alt="imagen5">
+            <img src="https://i.imgur.com/TL7TsXt.jpeg" alt="imagen6">
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Dulce Tentación</h1>
+    </div>
+
+    <div id="historia"class="secciones">Historia</div>
+    <div class="section">
+        <div >
+            <p class="parrafo">En un pequeño rincón de la ciudad, donde las calles empedradas susurraban historias de antaño, nació "Dulce Tentación". Cuenta la leyenda que una joven pastelera, con un alma creativa y un paladar exquisito, soñaba con un lugar donde el aroma del café recién hecho se entrelazara con la dulzura de los postres caseros.
+
+                Con cada receta, esta talentosa mujer iba creando un mundo de sabores y aromas que cautivaban a quienes la probaban. Sus pasteles eran como obras de arte comestibles, y su café, una infusión mágica que despertaba los sentidos. Pronto, su pequeña cocina se convirtió en el centro de reunión de los vecinos, quienes acudían en busca de un momento de dulce tentación.
+                </p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/df3JeXVWYWA?si=uVmfqXoZQ35drj2-" frameborder="0"></iframe>
+        </div>
+    </div>
+    <a href="#menu" class="menu-btn">Menú</a>
+
+    <div class="secciones">Menú</div>
+    <div id="menucafe"class="section">
+        <div>
+            <img class="imagenseccion2" src="https://i.imgur.com/QxDSdbj.jpeg" alt="imagenpostre" style="width: 190px; height:250px">
+            <iframe class="paginamenu"  src="https://yocomotorrico.com/postres-bolivianos/" frameborder="0"></iframe>
+        </div>
+        <div >
+            <p class="parrafo">Nuestro menú busca transmitir la esencia de una experiencia cálida y acogedora, donde cada platillo y bebida es una celebración de sabores auténticos y frescos. Nos comprometemos a ofrecer opciones que deleiten tanto a los amantes del café como a quienes buscan algo dulce o salado. Cada ingrediente ha sido seleccionado con cuidado, reflejando nuestra pasión por la calidad y la sostenibilidad. Queremos que nuestros clientes sientan la invitación a disfrutar de un momento especial, ya sea en una pausa rápida o en una reunión con amigos, siempre rodeados de un ambiente amigable y relajado.</p>
+        </div>
+    </div>
+    <a href="#menu" class="menu-btn">Menú</a>
+
+    <div class="secciones">Blog</div>
+    <div id="blog"class="section">
+        <div>
+            <iframe class="googlesheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRl6f8M4cVjU3bkvQRRwzcxRvaUbxqlYfLRGG2sa40omaVn97AYw-1f3uxSh3AL1-NhfcXoENGcTLys/pubhtml?gid=904619360&single=true" frameborder="0"></iframe>
+            <img class="imagenbrownie" src="https://i.imgur.com/1fiIoMh.jpeg" alt="imagen brownie" style="width: 200px; height:250px">
+            <img class="imagenhuevos" src="https://i.imgur.com/Xj9JdSc.jpeg" alt="imagen huevos" style="width: 200px; height:260px">
+        </div>
+        <div class="receta">
+            <h2>¿Deseas hacer un brownie? Aquí te explicamos cómo hacerlo!</h2>
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>180 g de chocolate negro (70% cacao)</li>
+                <li>180 g de mantequilla</li>
+                <li>3 huevos grandes</li>
+                <li>200 g de azúcar</li>
+                <li>100 g de harina</li>
+                <li>1/2 cucharadita de sal</li>
+                <li>1 cucharadita de extracto de vainilla</li>
+                <li>Nueces picadas (opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <ol>
+                <li><strong>Precalienta el horno:</strong> A 180°C. Engrasa y enharina un molde cuadrado.</li>
+                <li><strong>Derrite el chocolate y la mantequilla:</strong> En un bol resistente al calor, derrite el chocolate y la mantequilla a baño maría o en el microondas, removiendo hasta obtener una mezcla homogénea.</li>
+                <li><strong>Incorpora los huevos y el azúcar:</strong> Agrega los huevos uno a uno a la mezcla de chocolate, batiendo bien después de cada adición. Incorpora el azúcar y la vainilla.</li>
+                <li><strong>Agrega la harina y la sal:</strong> Tamiza la harina y la sal sobre la mezcla y mezcla hasta que se integren, sin batir en exceso.</li>
+                <li><strong>Añade nueces (opcional):</strong> Si deseas agregar nueces, incorpóralas a la masa.</li>
+                <li><strong>Hornea:</strong> Vierte la masa en el molde preparado y hornea durante 25-30 minutos, o hasta que al insertar un palillo salga húmedo pero no líquido.</li>
+                <li><strong>Enfría y corta:</strong> Deja enfriar completamente en el molde antes de cortar en cuadrados.</li>
+            </ol>
+        </div>        
+    </div>
+    <a href="#menu" class="menu-btn">Menú</a>
+
+    <div class="secciones">Eventos</div>
+    <div id="eventos" class="section">
+        <div>
+            <p>Información sobre próximos eventos en el café.</p>
+            <ul class="parrafo">
+                <li><strong>Lunes, 25 de octubre:</strong> Decoración del Local.</li>
+                <li><strong>Martes, 26 de octubre:</strong> Taller de Decoración de Calabazas de 4:00 p.m. a 6:00 p.m.</li>
+                <li><strong>Miércoles, 27 de octubre:</strong> Noche de Juegos de Mesa a partir de las 6:00 p.m.</li>
+                <li><strong>Jueves, 28 de octubre:</strong> Cata de Cafés de Otoño de 5:00 p.m. a 7:00 p.m.</li>
+                <li><strong>Viernes, 29 de octubre:</strong> Noche de Películas de Terror a partir de las 7:00 p.m.</li>
+                <li><strong>Sábado, 30 de octubre:</strong> Fiesta de Disfraces de 6:00 p.m. a 10:00 p.m.</li>
+                <li><strong>Domingo, 31 de octubre:</strong> Día de Dulces durante todo el día.</li>
+            </ul>
+        </div>
+        <div>
+            <p class="parrafo">La semana de Halloween en nuestro café fue un éxito, con actividades como la decoración del local y el taller de calabazas. La fiesta de disfraces atrajo a muchos, quienes recibieron calculadoras personalizadas como premios. Cada evento fortaleció nuestra comunidad y dejó recuerdos memorables. ¡Estamos emocionadas por repetirlo este año!</p>
+            <iframe class="calculadora"src="calculadoraAbi.html" frameborder="0" style="width: 200px; height:250px"></iframe>
+            <p>Haz click aquí para descargar:</p>
+            <a href="https://raw.githubusercontent.com/AbigailSmile/proyectofinal/main/calculadoraAbi.html" download="calculadoraAbi.html">descargar archivo</a>
+            <p>Haz click aquí para ver la calculadora:</p>
+            <a href="https://abigailsmile.github.io/proyectofinal/calculadoraAbi.html" target="_blank">Ver calculadora</a>
+            
+        </div>
+        
+    </div>
+    <a href="#menu" class="menu-btn">Menú</a>
+
+    <footer>
+        <div class="footer">
+            <a href="https://youtube.com/@velasquezabigail3444?si=445nox49S05KrCqi">
+                <img src="https://i.imgur.com/YbXA4z2.png" alt="logo youtube" style="width: 30px; height:30px">
+            </a>
+            <a href="https://www.tiktok.com/@abiiii_01405?_t=8qCal1FvJzi&_r=1">
+                <img src="https://i.imgur.com/2r6s2TX.png" alt="logo tik tok" style="width: 30px; height:30px">
+            <a href="https://www.snapchat.com/add/a_velasquez4535?share_id=BX6iuPaA4Xk&locale=es-US">
+                <img src="https://i.imgur.com/xrP1828.jpeg" alt="logo snapchat" style="width: 30px; height:30px">
+            <a href="https://www.threads.net/@ariana_abisita?xmt=AQGzOeZoP0OECMbAGjsLZLSXETtpVx0P6FG9t1TXs09D79s">
+                <img src="https://i.imgur.com/jJsOJ7R.png" alt="logo threads" style="width: 30px; height:30px">
+            <a href="https://open.spotify.com/user/iiemums4ovi4uioq8bj6rhdpb?si=QzkxIhYYTw2FXctqGhQ3eQ">
+                <img src="https://i.imgur.com/QQqancN.jpeg" alt="logo spoty" style="width: 30px; height:30px">
+            </a>
+                
+            <br>
+
+            ® Abigail and Araceli Coffee
+        </div>
+    </footer>
+</body>
+</html>
